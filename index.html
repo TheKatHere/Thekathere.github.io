@@ -2,15 +2,24 @@
 <html>
   <Head>
 	<style>
-		ul {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(67, 34, 78, 1);
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
-li {
+li.left {
   float: left;
+}
+li.center {
+  float: center;
+}
+li.right {
+  float: right;
 }
 li a {
   display: block;
@@ -21,27 +30,24 @@ li a {
 }
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: rgba(176, 77, 238, 1);
 }
-.nav img{
-  height: 20px;
-  /* put value of image height as your need */
-  float: left;
-  margin-right: 7px;
+body {
+ margin:0
+}
+img.navimg {
+ width: auto; 
+ max-height: 30%; 
 }
 	</style>
     <title>Hello There - The Kat</title>
     <link rel="icon" type="image/x-icon" href="Kat.ico">
   </head>
-  <body>
+  <body style="background-image: linear-gradient(rgba(49, 31, 52, 1),rgba(21, 16, 36, 1));  background-attachment: fixed;">
 	<ul>
-		<li><a href="https://thekathere.github.io/"><img src="Kat.ico" size> Home</a></li>
-		<li><p> more links soon! </p></li>
+		<li class="left"><a href="https://thekathere.github.io/"><img src="Kat.ico" class="navimg"> Home</a></li>
+		<li class="right"><a style="float:right" href="https://github.com/TheKatHere/Thekathere.github.io/tree/Release">Github</a></li>
 	</ul>
-	<center>
-		<h3><b>hello there!</b></h3>
-		<p>This site is in progress, see bleow! -The Kat</p>
-		<a href="https://github.com/TheKatHere/Thekathere.github.io/tree/Release">Github</a>
-	</center>
-  <body>
+	<div 
+  </body>
 </html>
